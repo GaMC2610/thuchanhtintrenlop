@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh Gai - Đặc Sản Việt Nam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #f8f8f8;
+        }
+        /* Thanh điều hướng */
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+        /* Banner */
+        .banner {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .banner img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        /* Nội dung chính */
+        .column {
+            width: 100%;
+            padding: 15px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: space-between;
+            gap: 50px;
+        }
+        h3 {
+            text-align: center;
+            color: black;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        /* Phần các loại bánh gai */
+        .baking-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        /* Footer */
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Thanh tiêu đề -->
+    <header>
+        <h1>Bánh Gai,Bánh Gai Gấc - Đặc Sản Việt Nam</h1>
+        <p>Bánh gai là đặc sản của các tỉnh vùng đồng bằng Bắc Bộ Việt Nam như Thanh Hóa, Hải Dương, Nam Định, Cao Bằng… Ở mỗi nơi, có những đặc điểm và tên gọi khác nhau, chẳng hạn như bánh gai Ninh Giang Hải Dương, Bánh gai Đại Đồng của Thái Bình,….</p>
+    </header>
+
+    <!-- Thanh điều hướng -->
+    <nav>
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#thanh-phan">Thành phần</a>
+        <a href="#cach-lam">Cách làm</a>
+        <a href="#cac-loai">Các loại</a>
+        <a href="#lien-he">Liên hệ</a>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="./banh.png" alt="Bánh Gai">
+    </div>
+
+    <!-- Nội dung chính -->
+    <div class="container">
+        <section id="gioi-thieu">
+            <h2>Giới Thiệu</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="./download.jfif" alt="Bánh gai Ninh Giang - Hải Dương">
+                    <p>-Bánh gai là một món ăn truyền thống của Việt Nam, đặc biệt phổ biến ở các vùng như Hải Dương, Nam Định, và Thanh Hóa.  Với lớp vỏ màu đen từ lá gai và nhân đậu xanh thơm ngọt, bánh gai không chỉ ngon mà còn chứa </p>
+                    <p>-Bánh gai gấc Hải Dương là một món ăn truyền thống của vùng đất Ninh Giang, Hải Dương. Món bánh này được làm từ bột nếp, gấc, đường và nhân bánh gồm hạt sen, mứt bí, đỗ xanh, dừa nạo và dầu chuối.</p>
+                </div>
+        </section>
+
+        <hr>
+
+        <section id="thanh-phan">
+            <h2>Thành Phần</h2>
+            <div class="container">
+                <div class="column">
+                    <h3>Bánh gai</h3>
+                    <ul>
+                        <li>Gạo nếp thơm</li>
+                        <li>Lá gai tươi</li>
+                        <li>Đậu xanh</li>
+                        <li>Dừa nạo</li>
+                        <li>Mỡ lợn</li>
+                        <li>Đường trắng</li>
+                        <li>Vừng rang</li>
+                        <li>Lá chuối để gói bánh</li>
+                    </ul>
+                </div>
+        
+                <div class="column">
+                    <h3>Bánh gai gấc</h3>
+                    <ul>
+                        <li>Gạo nếp</li>
+                        <li>Gấc</li>
+                        <li>Đường</li>
+                        <li>Hạt sen</li>
+                        <li>Mứt bí</li>
+                        <li>Đỗ xanh</li>
+                        <li>Dừa nạo</li>
+                        <li>Dầu chuối</li>
+                        <li>Vừng rang</li>
+                        <li>Lá chuối để gói bánh</li>
+                    </ul>
+                </div>
+            </div>
+            </section>
+            
+        <section id="cac-buoc-lam">
+            <h2>Các Bước Làm</h2>
+        <hr>
+        <table border="1" cellpadding="5" cellspacing="0">
+        <tr>
+            <th>Các Bước</th>
+            <th>Bánh gai gấc</th>
+            <th>Bánh gai</th>
+        </tr>
+        <tr>
+            <td>Bước 1</td>
+            <td>Làm nhân bánh gấc : đậu xanh rửa sạch, ngâm khoảng 2 - 3 tiếng đồng hồ sau đó nấu chín và đem đi xay nhuyễn. </td>
+            <td>Ngâm gạo nếp khoảng 6 - 8 tiếng rồi xay thành bột mịn. </td>
+        </tr>
+        <tr>
+            <td>Bước 2</td>
+            <td>Làm vỏ bánh gấc : đổ 400g bột nếp vào một cái bát hoặc chậu sạch, lần lượt cho nước đường và thịt gấc đã nấu vào và nhào lên</td>
+            <td>Lá gai rửa sạch, luộc chín rồi xay nhuyễn, sau đó trộn với bột nếp để tạo màu đen đặc trưng.</td>
+        </tr>
+        <tr>
+            <td>Bước 3</td>
+            <td>Tạo hình bánh : lần lượt dàn mỏng vỏ bánh gấc ra, đặt nhân vào giữ rồi vo tròn lại, sau đó thả chúng lên một chiếc đĩa có phết dầu ăn</td>
+            <td>Bọc nhân vào bột bánh, nặn thành hình tròn rồi gói bằng lá chuối.</td>
+        </tr>
+        <tr>
+            <td>Bước 4</td>
+            <td>Gói bánh : bạn đặt bánh vào lá chuối, rắc một lớp mè trắng lên cho thơm rồi xếp lại thành hình vuông.</td>
+            <td>Đậu xanh nấu chín, giã nhuyễn và trộn với đường, dừa nạo, mỡ lợn để làm nhân.</td>
+        </tr>
+        <tr>
+            <td>Bước 5</td>
+            <td>Hấp bánh : nhẹ nhàng đặt bánh vào nồi hấp và nấu trong khoảng 1 giờ.</td>
+            <td>Hấp bánh khoảng 45 - 60 phút cho đến khi bánh chín.</td>
+        </tr>
+    </table>
+     </section>
+        <hr>
+
+        <section id="cac-loai" class="baking-section">
+            <h2>Các Loại Bánh Gai</h2>
+            <div class="grid-container">
+                 <div class="grid-item">
+                    <img src="./download.jfif" alt="Bánh gai Ninh Giang - Hải Dương">
+                    <p><strong>Bánh gai Ninh Giang - Hải Dương</strong> Nhân bánh gai Ninh Giang được làm từ nhiều loại nguyên liệu như mứt bí, mứt sen, mỡ heo và đỗ xanh. Do đó bánh gai Ninh Giang có vị béo ngậy, ngọt bùi, thơm ngon khó cưỡng.</p>
+               </div>
+                <div class="grid-item">
+                    <img src="./thanhhoa.jfif" alt="Bánh gai Tứ Trụ - Thanh Hóa">
+                    <p><strong>Bánh gai Tứ Trụ - Thanh Hóa</strong>Bánh gai Tứ Trụ được làm từ các nguyên liệu quen thuộc như gạo nếp, đỗ xanh, thịt lợn, vừng và lá gai. Điểm khác biệt ở bánh gai Thanh Hóa là có sử dụng thêm mật mía.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./tb.jfif" alt="Bánh gai Đại Đồng - Thái Bình">
+                    <p><strong>Bánh gai Đại Đồng - Thái Bình</strong>Nguyên liệu làm nên bánh gai Đại Đồng là những nguyên liệu sẵn có ở đồng quê. Tiêu biểu cần phải kể đến như lá cây gai, gạo nếp, lạc, vừng, đỗ xanh, cùi dừa, hạt sen, dầu chuối, đường kính và mỡ lợn…</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./đo.jpg" alt="Bánh gai gấc Ninh Giang - Hải Dương">
+                    <p><strong>Bánh gai gấc Ninh Giang - Hải Dương</strong> Có nhiều giả thuyết về nguồn gốc của bánh gấc. Một trong số đó cho rằng bánh gấc có nguồn gốc từ miền Bắc Việt Nam, xuất hiện từ thời nhà Nguyễn.</p>
+               </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer id="lien-he">
+        <p>  Bánh Gai Việt Nam - Tinh hoa ẩm thực Việt Nam</p>
+    </footer>
+
+</body>
+</html>

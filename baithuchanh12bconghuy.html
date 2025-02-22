@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bánh Gai - Đặc Sản Việt Nam</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            background-color: #e77de2;
+        }
+        header {
+            background-color: #eeff05;
+            color: rgb(3, 0, 0);
+            padding: 15px 0;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            background-color: #4CAF50;
+            border-radius: 5px;
+        }
+        .banner {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .banner img {
+            width: 80%;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #00ccff;
+            margin-bottom: 10px;
+        }
+        p {
+            text-align: justify;
+            line-height: 1.6;
+        }
+        ul {
+            margin-left: 20px;
+        }
+        .baking-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+        .grid-item {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            text-align: center;
+        }
+        .grid-item img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        footer {
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 15px 0;
+            margin-top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bánh Gai - Đặc Sản Việt Nam</h1>
+        <p>Bánh gai là đặc sản của các tỉnh vùng đồng bằng Bắc Bộ Việt Nam như Thanh Hóa, Hải Dương, Nam Định, Cao Bằng… Ở mỗi nơi, có những đặc điểm và tên gọi khác nhau, chẳng hạn như bánh gai Ninh Giang Hải Dương, Bánh gai Đại Đồng của Thái Bình,….</p>
+    </header>
+
+    <!-- Thanh điều hướng -->
+    <nav>
+        <a href="#gioi-thieu">Giới thiệu</a>
+        <a href="#thanh-phan">Thành phần</a>
+        <a href="#cach-lam">Cách làm</a>
+        <a href="#cac-loai">Các loại</a>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner">
+        <img src="./banh.png" alt="Bánh Gai">
+    </div>
+    <div class="container">
+        <section id="gioi-thieu">
+            <h2>Giới Thiệu</h2>
+            <p>
+                Bánh gai là một món ăn truyền thống của Việt Nam, đặc biệt phổ biến ở các vùng như Hải Dương, Nam Định, và Thanh Hóa. 
+                Với lớp vỏ màu đen từ lá gai và nhân đậu xanh thơm ngọt, bánh gai không chỉ ngon mà còn chứa đựng hương vị quê hương.
+            </p>
+        </section>
+
+        <hr>
+
+        <section id="thanh-phan">
+            <h2>Thành Phần</h2>
+            <ul>
+                <li>Gạo nếp thơm</li>
+                <li>Lá gai tươi</li>
+                <li>Đậu xanh</li>
+                <li>Dừa nạo</li>
+                <li>Mỡ lợn</li>
+                <li>Đường trắng</li>
+                <li>Vừng rang</li>
+                <li>Lá chuối để gói bánh</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="cach-lam">
+            <h2>Cách Làm Bánh Gai</h2>
+            <p><strong>Bước 1:</strong> Ngâm gạo nếp khoảng 6 - 8 tiếng rồi xay thành bột mịn.</p>
+            <p><strong>Bước 2:</strong> Lá gai rửa sạch, luộc chín rồi xay nhuyễn, sau đó trộn với bột nếp để tạo màu đen đặc trưng.</p>
+            <p><strong>Bước 3:</strong> Đậu xanh nấu chín, giã nhuyễn và trộn với đường, dừa nạo, mỡ lợn để làm nhân.</p>
+            <p><strong>Bước 4:</strong> Bọc nhân vào bột bánh, nặn thành hình tròn rồi gói bằng lá chuối.</p>
+            <p><strong>Bước 5:</strong> Hấp bánh khoảng 45 - 60 phút cho đến khi bánh chín.</p>
+        </section>
+
+        <hr>
+
+        <section id="cac-loai" class="baking-section">
+            <h2>Các Loại Bánh Gai</h2>
+            <div class="grid-container">
+                <div class="grid-item">
+                    <img src="./download.jfif" alt="Bánh gai Ninh Giang - Hải Dương">
+                    <p><strong>Bánh gai Ninh Giang - Hải Dương</strong>Theo đó, bánh gai Ninh Giang đã ra đời cách đây gần 700 năm. Xưa kia, bánh được gói theo hình tròn và không có lá bọc bên ngoài. Sau này bánh được gói theo hình dạng vuông vắn trông đẹp mắt hơn.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./thanhhoa.jfif" alt="Bánh gai Tứ Trụ - Thanh Hóa">
+                    <p><strong>Bánh gai Tứ Trụ - Thanh Hóa</strong> Mảnh đất Thanh Hóa không chỉ được biết đến với món nem chua ngon nổi tiếng mà còn có bánh gai Tứ Trụ nức danh một vùng. Bánh gai Tứ Trụ được làm từ các nguyên liệu quen thuộc như gạo nếp, đỗ xanh, thịt lợn, vừng và lá gai. Điểm khác biệt ở bánh gai Thanh Hóa là có sử dụng thêm mật mía. Đây được coi là thứ “vũ khí bí mật” giúp bánh gai Thanh Hóa luôn níu giữ được niềm yêu thích của thực khách bốn phương.</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./tb.jfif" alt="Bánh gai Đại Đồng - Thái Bình">
+                    <p><strong>Bánh gai Đại Đồng - Thái Bình</strong> Bánh gai Đại Đồng Thái Bình cũng đã có mặt cách đây hơn 400 năm. Nguyên liệu làm nên bánh gai Đại Đồng là những nguyên liệu sẵn có ở đồng quê. Tiêu biểu cần phải kể đến như lá cây gai, gạo nếp, lạc, vừng, đỗ xanh, cùi dừa, hạt sen, dầu chuối, đường kính và mỡ lợn…</p>
+                </div>
+                <div class="grid-item">
+                    <img src="./namdinh.jfif " alt="Bánh gai Bà Thi - Nam Định">
+                    <p><strong>Bánh gai Bà Thi - Nam Định</strong> Nhắc đến bánh gai đặc sản ở đâu không thể không nhắc đến bánh gai Bà Thi đặc sản Nam Định. Bánh gai được làm từ những hạt gạo nếp tháng ba hương hòa. Thành phần của bánh gai Bà Thị có tinh dầu thực vật, mỡ heo, dừa thái sợi, vừng, hạt sen, lạc và đỗ xanh.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer> 
+        <p>  Bánh Gai Việt Nam - Tinh hoa ẩm thực Việt Nam</p>
+        <p>A Đớ</p>
+    </footer>
+
+</body>
+</html>
